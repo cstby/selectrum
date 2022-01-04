@@ -404,7 +404,11 @@ This option needs to be set before activating `selectrum-mode'."
       #'selectrum-select-current-candidate)
     (define-key map [remap scroll-down-command]
       #'selectrum-previous-page)
+    (define-key map [remap cua-scroll-down]
+      #'selectrum-previous-page)
     (define-key map [remap scroll-up-command]
+      #'selectrum-next-page)
+    (define-key map [remap cua-scroll-up]
       #'selectrum-next-page)
     ;; Use `minibuffer-beginning-of-buffer' for Emacs >=27 and
     ;; `beginning-of-buffer' for Emacs <=26.
